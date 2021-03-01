@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>周飞飞的Gridea MarkDown语法初探！😎 | 周飞飞のblog</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://sherlockzyb.github.io/favicon.ico?v=1614581505867">
+<link rel="stylesheet" href="https://sherlockzyb.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="
+👻在开始进行博客写作之前打算先学好与Gridea兼容的MarkDown语法，并形成自己写作的一套体系deisi！
+
+
+一、标题！
+嘛，一篇好的文章当然少不了一个大写的标题，在MarkDown语法中，想要创造标题很简单：
+在标题名称前面添..." />
+    <meta name="keywords" content="MarkDown,Gridea" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://sherlockzyb.github.io">
+        <img src="https://sherlockzyb.github.io/images/avatar.png?v=1614581505867" class="site-logo">
+        <h1 class="site-title">周飞飞のblog</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+          <a class="social-link" href="https://github.com/SherlockZYB" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        
+      
+        
+          <a class="social-link" href="https://twitter.com/ym5iLyWN2IxhUuN" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        
+      
+        
+      
+        
+          <a class="social-link" href="https://www.zhihu.com/people/zhou-yu-98-46" target="_blank">
+            <i class="fab fa-zhihu"></i>
+          </a>
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      我们的征途是——星辰大海！
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://sherlockzyb.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">周飞飞的Gridea MarkDown语法初探！😎</h2>
+            <div class="post-date">2021-02-27</div>
+            
+              <div class="feature-container" style="background-image: url('https://sherlockzyb.github.io/post-images/zhou-fei-fei-de-gridea-markdown-yu-fa-chu-tan.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <blockquote>
+<p>👻在开始进行博客写作之前打算先学好与Gridea兼容的MarkDown语法，并形成自己写作的一套体系deisi！</p>
+</blockquote>
+<!-- more -->
+<h2 id="一-标题">一、标题！</h2>
+<p>嘛，一篇好的文章当然少不了一个大写的标题，在MarkDown语法中，想要创造标题很简单：<br>
+<strong>在标题名称前面添加#，几级标题就添加几个#，最后在#与标题名称之间添加一个空格就完成啦！</strong></p>
+<h2 id="二-段落">二、段落！</h2>
+<p>感觉用MarkDown写作的段落区别于我们常用的手写方式，是不需要在每段前面加空格和缩进什么的哦：<br>
+<strong>只需要在两个段落间放一个空白行就足够啦！</strong><br>
+实例：<br>
+就像</p>
+<p>这样！</p>
+<h2 id="三-强调">三、强调！</h2>
+<p>强调就是将文字进行常用的粗体、斜体以及粗体+斜体处理啦：<br>
+<strong>粗体和斜体的设置需要用到*，在想要强调的文字<em>前后</em>添加一个*就可以使其变为斜体，添加两个*就可以使其变为粗体，而三个*就是粗体+斜体啦！</strong><br>
+实例：<br>
+<em>强调</em> <strong>强调</strong> <em><strong>强调</strong></em></p>
+<h2 id="四-引用">四、引用！</h2>
+<p>引用就是将文字进行虚化处理：<br>
+<strong>引用需要用到的符号为&gt;，在要引用的句子前添加&lt;就可以了，句子本身并不需要添加引号；引用可嵌套，在第二层引用的句子前添加&gt;&gt;即可，以此类推；引用后的内容可以拥有其他MarkDown格式的元素</strong><br>
+实例：</p>
+<blockquote>
+<p>周飞飞说：<br>
+<em>哈哈</em></p>
+<blockquote>
+<p><strong>哈哈哈哈</strong></p>
+<blockquote>
+<p><em><strong>哈哈哈哈哈哈</strong></em></p>
+</blockquote>
+</blockquote>
+</blockquote>
+<h2 id="五列表">五：列表！</h2>
+<p>列表就是将一组元素进行有序或无序的排列：<br>
+<strong>有序列表需要在元素前方用到1. 的形式，而无序列表只需要使用 - 就够了，但别忘了空格哦~</strong><br>
+实例：</p>
+<ol>
+<li>第一
+<ol>
+<li>第一点一</li>
+<li>第一点二</li>
+</ol>
+</li>
+<li>第二<br>
+哈哈哈哈</li>
+</ol>
+<ul>
+<li>第一
+<blockquote>
+<p>哈哈哈哈</p>
+</blockquote>
+</li>
+<li>第二<br>
+哈哈哈哈</li>
+</ul>
+<h2 id="六-代码">六、代码！</h2>
+<p>果然作为程序员就不能离开代码，代码中的单词或句段可以通过虚化底凸显出来0 0：<br>
+<strong>在需要进行虚化底凸显的代码前后添加反引号 ` 即可，如果代码段中本身包含 ` ，则可以使用两个 `;需要注意的是使用缩进也会形成代码段</strong><br>
+实例：<br>
+周飞飞<code>赛高</code>！<br>
+<code>周飞飞`赛高`!</code></p>
+<h2 id="七-分隔线">七、分隔线！</h2>
+<p>古人有云：”距离产生美deisi!“，所以在不同部分之间添加分隔线是很有必要滴！：<br>
+<strong>分隔线的使用只需要在不同内容之间留一行放上三个*就足够啦！</strong><br>
+实例：<br>
+周飞飞</p>
+<hr>
+<p>牛逼！</p>
+<h2 id="八-链接">八、链接！</h2>
+<p>互联网是张大网，链接就是联通到各个区域的丝线：<br>
+<strong>使用链接需要采用[超链接显示名](超链接地址 &quot;超链接title&quot;)的格式，要注意超链接title一定是用的英文字符中的引号；使用&lt;&gt;可以轻易地将邮箱或是url转换为链接地址；链接同样可以使用强调的MarkDown格式</strong><br>
+实例：<br>
+我所学的所有MarkDown知识都来源于<a href="https://markdown.com.cn" title="这个网站真的很棒！">MarkDown语法</a><br>
+我的Qq邮箱是<a href="mailto:1015462621@qq.com">1015462621@qq.com</a><br>
+<strong><a href="sherlockzyb.github.io">我喜欢你</a></strong><br>
+<a href="sherlockzyb.github.io"><code>我也喜欢你</code></a></p>
+<h2 id="九-图片">九、图片！</h2>
+<p>图片是博客的灵魂呀：<br>
+<strong>要添加图像，请使用感叹号 !。图片的格式与链接类似，在方括号增加替代文本，图片链接放在圆括号里，括号里的链接后可以增加一个可选的图片标题文本。但似乎Gridea可以直接添加图片</strong><br>
+实例：<br>
+<img src="https://sherlockzyb.github.io/post-images/1614475669895.jpg" alt="一瓶银河" title="一瓶银河" loading="lazy"></p>
+<h2 id="十-内嵌html标签">十、内嵌HTML标签</h2>
+<p>使用HTML标签可以丰富文档的格式：<br>
+<strong>需要注意的是在HTML格式中不能再使用MarkDown格式，并且区块标签需要使用空格来与正文进行区分</strong><br>
+实例：<br>
+This <em>word</em> is italic.</p>
+<h2 id="十一-markdown扩展语法">十一、MarkDown扩展语法</h2>
+<p>删除线：**在要删除的语段前后各添加两个 ~ **<br>
+实例：<s>周飞飞喜欢邵佳薇</s> 周飞飞喜欢过邵佳薇</p>
+<p>任务列表：<strong>在任务列表前添加 - [] 的形式，中间选择使用x来判定是否选择</strong><br>
+实例：</p>
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1495436"><label class="task-list-item-label" for="task-item-1495436"> 是</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-6879032"><label class="task-list-item-label" for="task-item-6879032"> 否</label></li>
+</ul>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://sherlockzyb.github.io/tag/n-K7iR5hg/" class="tag">
+                    MarkDown
+                  </a>
+                
+                  <a href="https://sherlockzyb.github.io/tag/BFHnPP0H7/" class="tag">
+                    Gridea
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://sherlockzyb.github.io/post/zhou-fei-fei-de-cxue-xi-ri-zhi-day-1/">
+                  <h3 class="post-title">
+                    周飞飞的C#学习笔记    #Day 1
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
