@@ -1,126 +1,181 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta name="referrer" content="never">
+<meta name="keywords" content="">
+<meta name="description" content="欢迎访问[周飞飞のblog]的个人博客">
+<meta name="author" content="kveln">
 <title>周飞飞的C#学习笔记    #Day 1 | 周飞飞のblog</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+<link href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link
+  href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+  rel='stylesheet' type='text/css'>
+<link rel="alternate" type="application/rss+xml" title="周飞飞的C#学习笔记    #Day 1 | 周飞飞のblog » Feed"
+  href="http://sherlockzyb.github.io/atom.xml">
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.10/build/styles/androidstudio.min.css">
+<link href="http://sherlockzyb.github.io/styles/main.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="http://sherlockzyb.github.io/favicon.ico?v=1614596101879">
-<link rel="stylesheet" href="http://sherlockzyb.github.io/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/css/live2d.css">
 
+<script>hljs.initHighlightingOnLoad();</script>
 
+  <meta property="og:description" content="周飞飞的C#学习笔记    #Day 1" />
+  <meta property="og:url" content="http://sherlockzyb.github.io/post/zhou-fei-fei-de-cxue-xi-ri-zhi-day-1/" />
+  <meta property="og:locale" content="zh-CN" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="周飞飞のblog" />
+  <!-- <script src="../assets/styles/scripts/tocScript.js"></script> -->
+</head>
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-
-
-    <meta name="description" content="
-🤗🤗🤗今天是周飞飞学习C#的第一天！
-
-
-今日重点：
-1. C#的程序结构
-
-命名空间声明（Namespace declaration）
-class 声明
-Class 方法
-Class 属性
-一个 Main 方法：Main方法是程序..." />
-    <meta name="keywords" content="C#学习" />
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="http://sherlockzyb.github.io">
-        <img src="http://sherlockzyb.github.io/images/avatar.png?v=1614596101879" class="site-logo">
-        <h1 class="site-title">周飞飞のblog</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="http://sherlockzyb.github.io">周飞飞のblog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/">首页</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/archives">归档</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/tags">标签</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/post/about">关于</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <div class="gridea-search-container">
+            <form id="gridea-search-form" style="position: relative" data-update="1614596599331"
+              action="/search/index.html">
+              <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+              <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <!-- Page Header -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="http://sherlockzyb.github.io">周飞飞のblog</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+      Menu
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/">首页</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/archives">归档</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/tags">标签</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          
+          <a class="nav-link" href="/post/about">关于</a>
+          
+        </li>
+        
+        <li class="nav-item">
+          <div class="gridea-search-container">
+            <form id="gridea-search-form" style="position: relative" data-update="1614596599331"
+              action="/search/index.html">
+              <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+              <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="masthead" style="background-image: url('http://sherlockzyb.github.io/media/images/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        
+          <!-- 没Title为其他页面Header -->
+          
+            <!-- 没Title并且有headerType为Post：文章Header -->
+            <div class="post-heading">
+              <span class="tags">
+                
+                <a href="http://sherlockzyb.github.io/tag/c84pUq4uI/" class="tag">C#学习</a>
+                
+              </span>
+              <h1>周飞飞的C#学习笔记    #Day 1</h1>
+              <span class="meta">
+                Posted on
+                2021-02-27，6 min read
+              </span>
+            </div>
+          
+        
       </div>
     </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-    </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-          <a class="social-link" href="https://github.com/SherlockZYB" target="_blank">
-            <i class="fab fa-github"></i>
-          </a>
-        
-      
-        
-          <a class="social-link" href="https://twitter.com/ym5iLyWN2IxhUuN" target="_blank">
-            <i class="fab fa-twitter"></i>
-          </a>
-        
-      
-        
-      
-        
-          <a class="social-link" href="https://www.zhihu.com/people/zhou-yu-98-46" target="_blank">
-            <i class="fab fa-zhihu"></i>
-          </a>
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      我们的征途是——星辰大海！
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="http://sherlockzyb.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
-
-
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">周飞飞的C#学习笔记    #Day 1</h2>
-            <div class="post-date">2021-02-27</div>
-            
-              <div class="feature-container" style="background-image: url('http://sherlockzyb.github.io/post-images/zhou-fei-fei-de-cxue-xi-ri-zhi-day-1.jpg')">
-              </div>
-            
-            <div class="post-content" v-pre>
-              <blockquote>
+</header>
+  <!-- Post Content -->
+  <article id="post-content-article">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto post-content-container">
+          
+          <img class="post-feature-header-image" src="http://sherlockzyb.github.io/post-images/zhou-fei-fei-de-cxue-xi-ri-zhi-day-1.jpg" alt="封面图">
+          </img>
+          
+          <blockquote>
 <p>🤗🤗🤗<em>今天是周飞飞学习C#的第一天！</em></p>
 </blockquote>
 <!-- more -->
@@ -287,53 +342,228 @@ namespace StudyFirstDay
 <p>以上<br>
 明天也要好好加油呀！🚀🚀🚀</p>
 
-            </div>
+          <div class="toc-container"><ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%BB%8A%E6%97%A5%E9%87%8D%E7%82%B9">今日重点：</a>
+<ul>
+<li><a href="#1-c%E7%9A%84%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84">1. C#的程序结构</a></li>
+<li><a href="#2-c%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95">2. C#的基本语法</a></li>
+<li><a href="#3-c%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2">3. C#的数据类型与类型转换</a></li>
+<li><a href="#4-c%E7%9A%84%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F">4. C#的变量与常量</a></li>
+<li><a href="#5-c%E7%9A%84%E8%BF%90%E7%AE%97%E7%AC%A6-%E5%88%A4%E6%96%AD-%E5%BE%AA%E7%8E%AF">5. C#的运算符、判断、循环</a></li>
+<li><a href="#6-c%E7%9A%84%E5%B0%81%E8%A3%85">6. C#的封装</a></li>
+<li><a href="#7-c%E7%9A%84%E6%96%B9%E6%B3%95">7. C#的方法</a></li>
+<li><a href="#8-c%E5%8F%AF%E7%A9%BA%E7%B1%BB%E5%9E%8B">8. C#可空类型</a></li>
+<li><a href="#9-c%E6%95%B0%E7%BB%84">9. C#数组</a></li>
+</ul>
+</li>
+<li><a href="#%E4%BB%8A%E6%97%A5%E7%BB%83%E4%B9%A0">今日练习：</a></li>
+<li><a href="#%E4%BB%8A%E6%97%A5%E6%80%BB%E7%BB%93">今日总结：</a></li>
+</ul>
+</li>
+</ul>
+</div>
+          
+          <hr />
+          <p class="next-post">下一篇：
+            <a href="http://sherlockzyb.github.io/post/about/">
+              <span class="post-title">
+                你好！朋友&rarr;
+              </span>
+            </a>
+          </p>
+          
+          <div class="comment" style="text-align: center;">
             
-              <div class="tag-container">
-                
-                  <a href="http://sherlockzyb.github.io/tag/c84pUq4uI/" class="tag">
-                    C#学习
-                  </a>
-                
-              </div>
-            
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="http://sherlockzyb.github.io/post/about/">
-                  <h3 class="post-title">
-                    你好！朋友
-                  </h3>
-                </a>
-              </div>
+            <span id="/post/zhou-fei-fei-de-cxue-xi-ri-zhi-day-1/" class="leancloud_visitors"
+              data-flag-title="周飞飞的C#学习笔记    #Day 1">
+              <em class="post-meta-item-text">阅读量 </em>
+              <i class="leancloud-visitors-count">loading...</i>
+            </span>
             
 
             
+            
+            <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script>
 
+<style>
+	div#vcomments{
+		width:100%;
+		max-width: 1000px;
+		padding: 2.5%
+	}
+</style>
+
+
+	<div id="vcomments"></div>
+
+<script>
+	new Valine({
+		el: '#vcomments',
+		appId: 'hDcWSKpADWwvFp0WKVd43sqX-gzGzoHsz',
+		appKey: 'FkY8qtlSfUjytJoNHfHeQW6a',
+		avatar: 'hide',
+		pageSize: 5,
+		recordIp: true,
+		placeholder: 'Just Do It!',
+		visitor: true,
+	});
+</script>
+
+            
           </div>
-
+        </div>
+      </div>
+  </article>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            
+            
+            <li class="list-inline-item">
+              <a href="https://github.com/SherlockZYB" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            
+              
+            
+            <li class="list-inline-item">
+              <a href="https://twitter.com/ym5iLyWN2IxhUuN" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            
+              
+            
+              
+            
+            <li class="list-inline-item">
+              <a href="https://www.zhihu.com/people/zhou-yu-98-46" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-zhihu fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            
+              
+            
+              
+            
+            <li class="list-inline-item">
+              <a href="https://www.instagram.com/zhouflyflying/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            
+              
+            
+              
+              <!-- <li class="list-inline-item">
+              <a href="http://sherlockzyb.github.io/atom.xml" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+              </li> -->
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;<span>周飞飞のblog</span><br><a href="https://github.com/getgridea/gridea" class="Themeinfo">Powered by Gridea</a></p>
         </div>
       </div>
     </div>
+   </footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="http://sherlockzyb.github.io/media/scripts/bootstrap.bundle.min.js"></script> -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://cdn.jsdelivr.net/gh/Alanrk/clean-cdn@1.0/scripts/clean-blog.min.js"></script>
+  <!-- <script src="http://sherlockzyb.github.io/media/scripts/clean-blog.min.js"></script> -->
+  <script src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
+  <style type="text/css">a.back_to_top{text-decoration:none;position:fixed;bottom:40px;right:30px;background:#f0f0f0;height:40px;width:40px;border-radius:50%;line-height:36px;font-size:18px;text-align:center;transition-duration:.5s;transition-propety:background-color;display:none}a.back_to_top span{color:#888}a.back_to_top:hover{cursor:pointer;background:#dfdfdf}a.back_to_top:hover span{color:#555}@media print,screen and(max-width:580px){.back_to_top{display:none!important}}</style>
+<a id="back_to_top" href="#" class="back_to_top">
+  <span>▲</span></a>
+<script>$(document).ready((function(_this) {
+    return function() {
+      var bt;
+      bt = $('#back_to_top');
+      if ($(document).width() > 480) {
+        $(window).scroll(function() {
+          var st;
+          st = $(window).scrollTop();
+          if (st > 30) {
+            return bt.css('display', 'block')
+          } else {
+            return bt.css('display', 'none')
+          }
+        });
+        return bt.click(function() {
+          $('body,html').animate({
+            scrollTop: 0
+          },
+          800);
+          return false
+        })
+      }
+    }
+  })(this));</script>
+  
+  <div id="landlord-parent">
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+    </div>
+</div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+<script type="text/javascript">
+    if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
+        //移动端
+        console.log("------ 移动端");
+    } else {
+        console.log("------ PC端 " + navigator.userAgent);
 
-AOS.init();
+        addScript("https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/live2d.js", () => {
+            // 加载完成后再loadlive2d
+            loadlive2d("live2d", "http://sherlockzyb.github.io/media/live2d/assets/tororo.model.json");
+        });
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+        var home_Path = "http://sherlockzyb.github.io/";
+        addScript("http://sherlockzyb.github.io/media/live2d/js/message.js", () => { });
+    }
 
+    // 插入js文件，完成后callback
+    function addScript(jsfile, callback) {
+        var landlord_parent = document.getElementById("landlord-parent");
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = jsfile;
+        landlord_parent.appendChild(script);
+        script.onload = script.onreadystatechange = function () {
+            if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") {
+                script.onload = script.onreadystatechange = null;
+                if (callback && typeof callback == "function") {
+                    callback(); //window[callback]();如果传递字符串过来 调用window['函数名']() 调用方法
+                }
+            }
+        };
+    }
 </script>
+  
+  <script src="http://sherlockzyb.github.io/media/scripts/tocScript.js"></script>
+</body>
 
-
-
-
-
-
-  </body>
 </html>
