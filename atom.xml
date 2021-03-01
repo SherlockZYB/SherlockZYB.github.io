@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sherlockzyb.github.io</id>
     <title>周飞飞のblog</title>
-    <updated>2021-03-01T10:18:48.974Z</updated>
+    <updated>2021-03-01T10:20:55.661Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sherlockzyb.github.io"/>
     <link rel="self" href="https://sherlockzyb.github.io/atom.xml"/>
@@ -112,8 +112,8 @@ This <em>word</em> is italic.</p>
 <p>任务列表：<strong>在任务列表前添加 - [] 的形式，中间选择使用x来判定是否选择</strong><br>
 实例：</p>
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-1477549"><label class="task-list-item-label" for="task-item-1477549"> 是</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-3700873"><label class="task-list-item-label" for="task-item-3700873"> 否</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2605632"><label class="task-list-item-label" for="task-item-2605632"> 是</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-5380800"><label class="task-list-item-label" for="task-item-5380800"> 否</label></li>
 </ul>
 ]]></content>
     </entry>
